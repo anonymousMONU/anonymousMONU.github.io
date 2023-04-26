@@ -1,0 +1,43 @@
+{% extends 'bass.html' %}
+
+{% block tittle %} contact {% endblock tittle %}
+
+{% block body %}
+this is contacts
+
+<div class="container">
+    <img src="/static/img/contacts.jpg" width="600px" height="400px" alt="...">
+<h1 class="text-center">Contact Us</h1>
+    <form method="post" action="/contact">
+        {% csrf_token %}
+</div>
+<div class="container-fluid">
+    <form>
+         <div class="form-group">
+    <label for="name">Name</label>
+    <input type="text" class="form-control" id="name" name="name" placeholder="Enter your Name">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputEmail1" class="form-label">Email address</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" name="email" placeholder="Enter your Email">
+
+  </div>
+        <div class="form-group">
+    <label for="phone">Phone Number</label>
+    <input type="phone" class="form-control" id="phone" name="phone" placeholder="Enter your Phone Number">
+  </div>
+        
+
+ <div class="form-group">
+     <label form="desc">tell me what you want.......</label>
+     <textarea class="form-control" id="desc" rows="4" name="desc"></textarea>
+ </div>
+
+  <div class="form-group form-check">
+
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+</div>
+
+{% endblock body %}

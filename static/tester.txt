@@ -1,0 +1,3 @@
+this is text file in our django project
+we will check and run this text file in our django project
+lets run the server
